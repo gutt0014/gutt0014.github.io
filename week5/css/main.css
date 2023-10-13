@@ -85,7 +85,7 @@ nav ul a:visited {
     box-shadow: -2px 2px 4px 2px black;
 }
 
-/* Add class of current to HTML home link after adding hover and focua */
+/* Add class of current to HTML home link after adding hover and focus */
 nav ul .current,
 nav ul a:hover,
 nav ul a:focus {
