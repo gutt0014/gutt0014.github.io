@@ -8,6 +8,27 @@ body {
     background-image: url(../images/brickwall.png);
 }
 
+/* Box Model example */
+section p {
+    width: 50%;
+/* single value = top/bottoms/left/right */
+/* 2 values = first value = top/bottom, second value = left/right */
+    padding: 5em .5em;
+/* top right bottom left */
+    margin: -1em 2em 2em 2em;
+/* if you only want margin on bottom, be specific margin-bottom */
+}
+
+.container {
+/* create container containing everything inside the body tag */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
 h1 {
     color: cadetblue;
 }
@@ -27,8 +48,16 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 /* Selecting child elements multiple levels */
 nav ul a {
+    display: block;
     color: darkslategrey;
     text-decoration: none;
 }
@@ -52,6 +81,9 @@ nav ul a {
 
 /* Selecting HTML elements with a class name */
 .blue-link {
+    padding: 1.5em;
+    width: 300px;
+    display: block;
     background-color: darkslategrey;
     color: antiquewhite;
     text-decoration: none;
@@ -59,6 +91,27 @@ nav ul a {
 .large-text {
     font-size: 24px;
 }
+
+/* Example of float */
+article, 
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+/* Clear float from the section */
+section {
+    clear: both;
+}
+
 .white-text {
     color: antiquewhite;
 }
