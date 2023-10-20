@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    padding: 150px;
+    background-image: url(../images/lone-starfish-wide.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none; 
+}
+
+nav ul li {
+    display: inline-block;
+    width: 27%;
+    padding: 1em;
+    font-size: 22px;
+    color: black;
+    text-transform: uppercase;
+    border-right: 1px solid black; 
+}
+
+nav li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+nav, main, footer, header {
+    background-color: #d6f6f2;
+    padding: 2em;
+}
+
+h2, h3, h4 {
+    font-size: 24px;
+}
+
+img {
+    width: 200px;
+    float: left;
+    margin: 10px;
+}
+
+form {
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 800px; 
+}
+
+input[type="email"] {
+    width: 800px; 
+}
+
+textarea {
+    width: 800px;
+}
