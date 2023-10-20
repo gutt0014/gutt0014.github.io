@@ -1,8 +1,9 @@
+/* Styling body text and background colour */
 body {
     margin: 0;
     padding: 0;
     background-color: #aad4cf;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 header {
@@ -13,7 +14,7 @@ header {
     text-align: center;
     color: white; 
 }
-
+/* Styling title */
 h1 {
     font-size: 63px; 
     position: relative;
@@ -22,7 +23,7 @@ h1 {
     font-weight: normal;
    
 }
-
+/* Styling nav, centering, adding lines between, inline */
 nav {
     background-color: #aad4cf; 
     text-align: center;
@@ -51,6 +52,7 @@ nav li:last-child {
     padding-right: 0;
 }
 
+/* Calling container to center the webpage */
 .container {
     align-items: center;
     height: 20vh;
@@ -63,6 +65,7 @@ nav, main, footer, header {
     padding: 2em;
 }
 
+/* Resizing and positioning image */
 img {
     width: 200px;
     float: left;
@@ -79,6 +82,7 @@ footer {
     text-align: right;
 }
 
+/* Making contact form booxes larger */
 input[type="text"] {
     width: 800px; 
 }
