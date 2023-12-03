@@ -7,13 +7,13 @@
     <title>Final Project</title>
     <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Reset and Main CSS -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-<!-- <i class="fa-solid fa-chevron-right"></i> -->
+
 <body>
     <div class="container">
         <!-- Adds header to body -->
@@ -28,207 +28,211 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <form action="search" method="post">
+            <form action="/search" method="post">
                 <label for="search">Search</label>
                 <div><input id="search" type="text"><button type="submit">Send</button></div>
+            </form>
         </header>
     </div>
     <!-- Add main to body -->
-        <main class="content">
-            <div class="intro">
-                <img src="images/main-banner.jpg" alt="Banner">
-                <div class="banner">
-                    <h1>Welcome to Three Star Media</h1>
+    <main class="content">
+        <div class="intro">
+            <img src="images/main-banner.jpg" alt="Banner">
+            <div class="banner">
+                <h1>Welcome to Three Star Media</h1>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn">Connect with us</a>
+        </div>
+        <!-- Adds Cards div -->
+        <div class="cards">
+            <section class="card">
+                <img src="images/about-us.jpg" alt="About Us">
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="btn">Connect with us</a>
-            </div>
-            <!-- Adds Cards div -->
-            <div class="cards">
-                <section class="card">
-                    <img src="images/about-us.jpg" alt="About Us">
-                    <div class="aboutus">
-                        <h3>About Us</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </section>
-                <!-- Closing card -->
-
-
-                <section class="card">
-                    <img src="images/digital.jpg" alt="Our Services">
-                    <div class="services">
-                        <h3>Our Services</h3>
-                        <h4>Digital Transformation</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <a href="#" class="btn">Digital Plans</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/marketing.jpg" alt="marketings">
-                    <div class="marketing">
-                        <h4>Marketing</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <a href="#" class="btn">Marketing Plans</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/video.jpg" alt="video">
-                    <div class="video">
-                        <h4>Video Production</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <a href="#" class="btn">Video Plans</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/web.jpg" alt="web">
-                    <div class="web">
-                        <h4>Web Development</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <a href="#" class="btn">Web Plans</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/print.jpg" alt="Print">
-                    <div class="print">
-                        <h4>Print</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <a href="#" class="btn">Print Plans</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/vision.jpg" alt="vision">
-                    <div class="vision">
-                        <h4>Our Vision</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/john.jpg" alt="John Doe">
-                    <div class="John">
-                        <h3>Our Team</h3>
-                        <h4>John Doe</h4>
-                        <h5>CEO and Co-owner</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <img src="images/bob.jpg" alt="Bob Rite">
-                    <div class="Bob">
-                        <h4>John Doe</h4>
-                        <h5>CEO and Co-owner</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </section>
-                <!-- closing card -->
-
-                <section class="card">
-                    <!-- Adding contact form -->
-                    <h3>Contact Us</h3>
-                    <h4>Send us a message</h4>
-                    <form action="contact" method="post">
-                        <label for="fullname">Full Name</label>
-                        <div><input id="fullname" type="text"></div>
-                        <label for="email">Email</label>
-                        <div><input id="email" type="email"></div>
-                        <label for="message">Message</label>
-                        <div><textarea id="message"></textarea></div>
-                        <div><button type="submit">Send</button></div>
-                    </form>
-                </section>
-                <!-- closing card -->
-            </div>
-            <!-- Closing Cards div -->
-
-            <!-- Adds Hours Table Section -->
-            <section>
-                <h4>Hours of Operation</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
             </section>
+            <!-- Closing card -->
 
-            <!--Adding Location & Map  -->
-            <section>
-                <div>
+            <section class="card">
+                <img src="images/digital.jpg" alt="Our Services">
+                <div class="services">
+                    <h3>Our Services</h3>
+                    <h4>Digital Transformation</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="btn">Digital Plans</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/marketing.jpg" alt="marketings">
+                <div class="marketing">
+                    <h4>Marketing</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="#" class="btn">Marketing Plans</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/video.jpg" alt="video">
+                <div class="video">
+                    <h4>Video Production</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="btn">Video Plans</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/web.jpg" alt="web">
+                <div class="web">
+                    <h4>Web Development</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#" class="btn">Web Plans</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/print.jpg" alt="Print">
+                <div class="print">
+                    <h4>Print</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#" class="btn">Print Plans</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/vision.jpg" alt="vision">
+                <div class="vision">
+                    <h4>Our Vision</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/john.jpg" alt="John Doe">
+                <div class="John">
+                    <h3>Our Team</h3>
+                    <h4>John Doe</h4>
+                    <h5>CEO and Co-owner</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <img src="images/bob.jpg" alt="Bob Rite">
+                <div class="Bob">
+                    <h4>John Doe</h4>
+                    <h5>CEO and Co-owner</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </section>
+            <!-- closing card -->
+
+            <section class="card">
+                <!-- Adding contact form -->
+                <h3>Contact Us</h3>
+                <h4>Send us a message</h4>
+                <form action="contact" method="post">
+                    <label for="fullname">Full Name</label>
+                    <div><input id="fullname" type="text"></div>
+                    <label for="email">Email</label>
+                    <div><input id="email" type="email"></div>
+                    <label for="message">Message</label>
+                    <div><textarea id="message" name="message"></textarea></div>
+                    <div><button type="submit">Send</button></div>
+                </form>
+            </section>
+            <!-- closing card -->
+        </div>
+        <!-- Closing Cards div -->
+
+        <!-- Adds Hours Table Section -->
+        <section>
+            <h4>Hours of Operation</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Adding Location & Map  -->
+        <section>
+            <div>
                 <h4>Location</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251135!2d-75.82702347832036!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701114461997!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251135!2d-75.82702347832036!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701114461997!5m2!1sen!2sca"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
-        </main>
-        <!-- Adding footer -->
+    </main>
+    <!-- Adding footer -->
+    <div>
         <footer>
             <p>Copyright &copy; Three Star Media 2023</p>
             <p>All images are taken from Unsplash</p>

@@ -1,122 +1,155 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*********************
-     Custom Styles 
-**********************/
-
-/********** Moblie Styles ***********/
-
 body {
     font-family: 'Open Sans', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: block;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
 }
 
+/* Container styles */
 .container {
-    background-color: #222;
-}
-
-.main-nav {
-    list-style: none;
-    max-width: 1200px;
-   margin: 0 auto;
-   text-align: center;
-   font-size: 30px;
-   color: white;
-}
-
-form {
-    text-align: center;
-}
-
-nav ul li:nth-child(1) {
-    background-color: #c78c06;
-}
-
-img {
     max-width: 1200px;
     margin: 0 auto;
-    display: block;
+}
+
+/* Header styles */
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: #222;
+    color: #c78c06; 
 }
 
 .mobile-logo {
-    float: left;
+    width: 100px;
+    height: auto;
+    background-color: #c78c06;
 }
 
-table {
-    width: 50%;
-    border-collapse: collapse;
+.main-nav {
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+}
+
+.nav-list li {
+    display: block;
+    margin-right: 10px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #c78c06;
+}
+
+nav ul li:nth-child(1) {
+  background-color: #c78c06;
+  
+}
+
+/* Main content styles */
+.content {
+    padding: 20px;
+}
+
+/* Intro section styles */
+.intro {
     margin-bottom: 20px;
 }
 
-th, td {
-    border: 1px solid black; 
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #ffe6ac;
-  }
-
-
-@media screen and (min-width: 760px) {
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-   }
+.intro img {
+    width: 100%;
+    height: auto;
 }
 
+.banner {
+    text-align: center;
+    background-color: #c78c06;
+    color: #fff;
+    padding: 10px;
+}
 
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #c78c06;
+    color: #fff;
+    text-decoration: none;
+}
 
+/* Cards section styles */
+.cards {
+    display: grid;
+    gap: 20px;
+}
 
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c78c06;
+    color: #fff;
+}
+
+.iframe {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Media query for screens 760px and above */
+@media (min-width: 760px) {
+    .nav-list {
+        text-align: left;
+    }
+
+    .nav-list li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+  .nav-list a {
+        text-decoration: none;
+        color: #c78c06; 
+    }
+
+    .nav-list a:hover {
+        color: #C78c06;
+    }
+}
+
+ /* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: o auto;
+    background-color: #fff;
+    color: #222;
+}
+
+thead {
+    background-color: #ffe6ac;
+    color: #222;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #222;
+  }
