@@ -6,13 +6,7 @@ body {
     background-color: #fff;
 }
 
-/* Container styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header styles */
+/* Header and Nav Styles */
 header {
     padding: 10px;
     text-align: center;
@@ -20,123 +14,63 @@ header {
     color: #c78c06; 
 }
 
-.mobile-logo {
-    width: 100px;
-    height: auto;
-    background-color: #c78c06;
-}
-
-.main-nav {
-    margin-top: 10px;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    text-align: center; 
-}
-
-.nav-list li {
-    display: block;
-    margin-right: 10px;
-}
 .nav-list a {
   text-decoration: none;
   color: #c78c06;
 }
 
-nav ul li:nth-child(1) {
-  background-color: #c78c06;
-  
-}
-
-/* Main content styles */
-.content {
-    padding: 20px;
-}
-
-/* Intro section styles */
-.intro {
-    margin-bottom: 20px;
-}
-
-.intro img {
-    width: 100%;
-    height: auto;
-}
-
-.banner {
-    text-align: center;
-    background-color: #c78c06;
-    color: #fff;
-    padding: 10px;
+form .material-symbols-outlined {
+    color: #c78c06; 
+    background-color: #222;
+    border: 1px solid #c78c06;
 }
 
 .btn {
     display: block;
-    width: 100%;
+    width: 25%;
     padding: 10px;
-    margin-top: 10px;
     text-align: center;
     background-color: #c78c06;
-    color: #fff;
+    color: #222;
     text-decoration: none;
+    font-size: 16px;
 }
 
-/* Cards section styles */
-.cards {
-    display: grid;
-    gap: 20px;
+.btn .material-symbols-outlined {
+    color: #222;
 }
 
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+/* Banner Styles */
+h1 {
+    background-color: transparent;
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
 }
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #c78c06;
+main, h1, p {
     color: #fff;
 }
 
-.iframe {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/* Media query for screens 760px and above */
-@media (min-width: 760px) {
-    .nav-list {
-        text-align: left;
-    }
-
-    .nav-list li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-  .nav-list a {
-        text-decoration: none;
-        color: #c78c06; 
-    }
-
-    .nav-list a:hover {
-        color: #C78c06;
-    }
+.banner {
+    text-align: left;
+    color: #fff;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5); 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -170%);
 }
 
  /* Table styles */
-table {
-    width: 100%;
+ .hours-wrapper h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+ }
+
+ table {
+    width: 75%;
     border-collapse: collapse;
     margin: o auto;
     background-color: #fff;
@@ -153,3 +87,159 @@ th, td {
     text-align: left;
     border: 1px solid #222;
   }
+
+/* Footer styles */
+footer p {
+    color: #c78c06;
+    text-align: left;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* About us Styles */
+.about img{
+    max-width: 100%;
+}
+
+.about {
+    color: #222;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+    background-color: #ffe6ac;
+}
+
+.about p {
+    color: #222;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h2 {
+    color: #222;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card {
+    background-color: #ffe6ac;
+    color: #222;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.card p {
+    color: #222;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Vision Styles */
+.vision {
+    background-color: #ffe6ac;
+    color: #222;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.vision p {
+    color: #222;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Our Team Styles */
+.john {
+    background-color: #ffe6ac;
+    color: #222;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.john p {
+    color: #222;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.Bob {
+    background-color: #ffe6ac;
+    color: #222;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.Bob p {
+    color: #222;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Contact Form Styles */
+.contactform, h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contactform, h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contactform {
+    color: #222;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 10px; 
+}
+
+input[type="text"] {
+    width: 700px; 
+}
+
+input[type="email"] {
+    width: 700px; 
+}
+
+textarea {
+    width: 700px;
+}
+
+/* Map Styles */
+.location-wrapper {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Media query for screens 760px and above */
+@media (min-width: 760px) {
+    .nav-list li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+  
+    header, .mobile-logo {
+        display: flex;
+        align-items: center;
+        align-content: space-evenly;
+        padding-right: 5%;
+    }
+
+    input[type="text"] {
+        width: 200px; 
+    }
+}
