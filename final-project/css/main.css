@@ -1,69 +1,205 @@
-body {
+/* Global Styles */
+html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #222;
-    background-color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-/* Header and Nav Styles */
-header {
-    padding: 10px;
-    text-align: center;
-    background-color: #222;
-    color: #c78c06; 
+body {
+    line-height: 1.5;
 }
 
-.nav-list a {
-  text-decoration: none;
-  color: #c78c06;
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
 }
 
-form .material-symbols-outlined {
-    color: #c78c06; 
-    background-color: #222;
-    border: 1px solid #c78c06;
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.btn {
-    display: block;
-    width: 25%;
-    padding: 10px;
-    text-align: center;
-    background-color: #c78c06;
-    color: #222;
-    text-decoration: none;
-    font-size: 16px;
+img {
+    width: 100%;
 }
 
-.btn .material-symbols-outlined {
-    color: #222;
+/* Link, Visted. Hover/focus, Active */
+a, 
+a:link,
+a:visited {
+    color: inherit;
 }
 
-/* Banner Styles */
-h1 {
-    background-color: transparent;
-    color: white;
-    font-size: 72px;
+a:hover,
+a:focus {
+    color: #c78c06;
+}
+
+h1, 
+h2, 
+h3,
+h4 {
     font-weight: bold;
+    margin: 0 auto
 }
-main, h1, p {
-    color: #fff;
+
+/* Font sizes are proportionate to eachother: www.modularscale.com */
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Header Styles */
+.mobile-logo {
+    max-width: 150px;
+}
+
+.desktop-logo {
+    display: none;
 }
 
 .banner {
-    text-align: left;
-    color: #fff;
-    width: 100%;
-    height: 50%;
     background: rgba(0, 0, 0, 0.5); 
     position: relative;
     left: 50%;
-    transform: translate(-50%, -170%);
+    transform: translate(-50%, -100%);
 }
 
- /* Table styles */
- .hours-wrapper h4 {
+.banner h1 {
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+.banner p {
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+/* Navigation Styles */
+.nav-list a {
+    text-decoration: none;
+    color: #c78c06;
+    background-color: #222;;
+}
+.nav-list a, 
+.nav-list :link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+/* Connect with us Button Style */
+.btn {
+    text-decoration: none;
+    display: block;
+    background-color: #c78c06;
+    padding: 10px;
+    width: 25%;
+}
+
+/* Footer styles */
+footer p {
+    color: #c78c06;
+    text-align: left;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Our Services Styles */
+.card {
+    border: 2px solid #ffe6ac;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    background-color: #ffe6ac;
+}
+
+.card .info {
+    padding: 1em;
+}
+
+.card h3 {
+    margin-top: 0 auto; 
+}
+
+/* Our Steam Styles */
+.john {
+    border-top: 2px solid #ffe6ac;
+    margin-top: 4em;
+    background-color: #ffe6ac;
+}
+
+.Bob {
+    border-top: 2px solid #ffe6ac;
+    margin-top: 4em;
+    background-color: #ffe6ac;
+}
+
+/* Contact Us Form Styles */
+.contactform, h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contactform, h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contactform {
+    color: #222;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 10px; 
+}
+
+input[type="text"] {
+   width: 600px;
+}
+
+input[type="email"] {
+    width: 600px; 
+}
+
+textarea {
+    width: 600px;
+}
+
+/* Table styles */
+.hours-wrapper h4 {
     font-size: 24px;
     font-weight: bold;
     color: #222;
@@ -88,158 +224,4 @@ th, td {
     border: 1px solid #222;
   }
 
-/* Footer styles */
-footer p {
-    color: #c78c06;
-    text-align: left;
-    padding: 10px;
-    background-color: #222;
-}
-
-/* About us Styles */
-.about img{
-    max-width: 100%;
-}
-
-.about {
-    color: #222;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 10px;
-    background-color: #ffe6ac;
-}
-
-.about p {
-    color: #222;
-    font-weight: lighter;
-    font-size: 16px;
-    padding: 10px;
-}
-
-h2 {
-    color: #222;
-    font-weight: bold;
-    font-size: 46px;
-}
-
-.card img {
-    max-width: 100%;
-}
-
-.card {
-    background-color: #ffe6ac;
-    color: #222;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 10px;
-}
-
-.card p {
-    color: #222;
-    font-weight: lighter;
-    font-size: 16px;
-    padding: 10px;
-}
-
-/* Vision Styles */
-.vision {
-    background-color: #ffe6ac;
-    color: #222;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 10px;
-}
-
-.vision p {
-    color: #222;
-    font-weight: lighter;
-    font-size: 16px;
-    padding: 10px;
-}
-
-/* Our Team Styles */
-.john {
-    background-color: #ffe6ac;
-    color: #222;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 10px;
-}
-
-.john p {
-    color: #222;
-    font-weight: lighter;
-    font-size: 16px;
-    padding: 10px;
-}
-
-.Bob {
-    background-color: #ffe6ac;
-    color: #222;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 10px;
-}
-
-.Bob p {
-    color: #222;
-    font-weight: lighter;
-    font-size: 16px;
-    padding: 10px;
-}
-
-/* Contact Form Styles */
-.contactform, h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.contactform, h3 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.contactform {
-    color: #222;
-    font-size: 16px;
-    font-weight: lighter;
-    padding: 10px; 
-}
-
-input[type="text"] {
-    width: 700px; 
-}
-
-input[type="email"] {
-    width: 700px; 
-}
-
-textarea {
-    width: 700px;
-}
-
-/* Map Styles */
-.location-wrapper {
-    font-size: 24px;
-    font-weight: bold;
-    color: #222;
-}
-
-/* Media query for screens 760px and above */
-@media (min-width: 760px) {
-    .nav-list li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-  
-    header, .mobile-logo {
-        display: flex;
-        align-items: center;
-        align-content: space-evenly;
-        padding-right: 5%;
-    }
-
-    input[type="text"] {
-        width: 200px; 
-    }
-}
+  /* Desktop Styles */
