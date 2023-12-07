@@ -11,33 +11,8 @@ body {
     margin: 0 auto;
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
-    line-height: inherit;
-}
-
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 img {
     width: 100%;
-}
-
-/* Link, Visted. Hover/focus, Active */
-a,
-a:link,
-a:visited {
-    color: inherit;
-}
-
-a:hover,
-a:focus {
-    color: #c78c06;
 }
 
 h1,
@@ -142,7 +117,7 @@ p {
     font-size: 16px;
 }
 
-.bannerimg {
+.bannerpic {
     width: 100%;
     height: auto;
     display: block;
@@ -150,6 +125,7 @@ p {
 
 /* Connect with us Button Style */
 .banner .btn {
+    color: #222;
     text-decoration: none;
     display: block;
     background-color: #c78c06;
@@ -173,46 +149,44 @@ p {
 .card-digital {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
-    margin-bottom: 2em;
     background-color: #ffe6ac;
+    padding: 10px;
 }
 
 .card-marketing {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
-    margin-bottom: 2em;
     background-color: #ffe6ac;
+    padding: 10px;
 }
 
 .card-video {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
-    margin-bottom: 2em;
     background-color: #ffe6ac;
+    padding: 10px;
 }
 
 .card-web {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
-    margin-bottom: 2em;
     background-color: #ffe6ac;
+    padding: 10px;
 }
 
 .card-print {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
-    margin-bottom: 2em;
     background-color: #ffe6ac;
+    padding: 10px;
 }
 
-.cards h3 {
-    margin-top: 0 auto;
-}
 
 .cards .btn {
     background: #222;
     color: #fff;
     padding: 5px;
+    text-decoration: none;
 }
 
 /* Our Team Styles */
@@ -275,27 +249,8 @@ p {
 }
 
 /* Contact Us Form Styles */
-.contactform,
-h2 {
-    font-weight: bold;
-    margin: o auto;
-    padding-left: 10px;
-
-}
-
-.contactform,
-h3 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .contactform {
-    color: #222;
-    font-weight: lighter;
-    max-width: 1200px;
-    margin: o auto;
     padding: 1em;
-    font-size: 16px;
 }
 
 input[type="text"] {
@@ -319,7 +274,7 @@ button[type="submit"] {
 /* Table styles */
 .hours {
     max-width: 1200px;
-    margin: o auto;
+    margin: 0 auto;
     padding: 1em;
 }
 
@@ -331,7 +286,7 @@ button[type="submit"] {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: o auto;
+    margin: 0 auto;
     background-color: #fff;
     color: #222;
 }
@@ -351,7 +306,7 @@ td {
 /* Map iframe Styles */
 .location iframe {
     max-width: 1200px;
-    margin: o auto;
+    margin: 0 auto;
     padding: 1em;
     width: 100%;
 }
@@ -359,7 +314,7 @@ td {
 .location h4 {
     font-weight: bold;
     color: #222;
-    margin: o auto;
+    margin: 0 auto;
     padding-left: 10px;
 }
 
@@ -374,39 +329,290 @@ footer p {
 
 /* Desktop Styles */
 @media screen and (min-width: 760px) {
-    .logo {
+    /* Styling header */
+    header {
+        background-color: #222;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: #222;
     }
 
-    .banner {
-        background: rgba(0, 0, 0, 0.5);
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, -150%);
-        align-items: center;
+    .logo {
+        flex-grow: 1;
+        background-color: #222;
     }
 
-    /* Navigation */
-  
-    .about {
+    .mobile-logo {
+        display: block;
+        max-width: 60px;
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .nav-list {
+        flex-grow: 3;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    button {
+        background-color: #222;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+    }
+
+    /* Styling Banner */
+    .bannerpic {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bannerpic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 80%;
+        height: 60%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .banner h1 {
+        font-size: 86px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .banner .btn {
+        display: block;
+        background-color: #c78c06;
+        color: #222;
+        width: 25%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Stlying About Us Section */
+    .wrapper-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 2em;
+    }
+
+    .about {
+        padding: 1em;
+        text-align: left;
     }
 
     .about p {
         padding: 1em;
     }
 
-    .about img {
+    .aboutimg {
         background-color: #ffe6ac;
         padding: 1em;
+    }
+
+    /* Styling Cards */
+    .cards .btn {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
     }
 
     .cards {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1em;
+        grid-gap: 10px;
     }
+
+    .card-digital {
+        grid-column: span 3;
+    }
+
+    .card-marketing {
+        grid-column: span 3;
+    }
+
+    .card-video {
+        grid-column: span 2;
+    }
+
+    .card-web {
+        grid-column: span 2;
+    }
+
+    .card-print {
+        grid-column: span 2;
+    }
+
+    .vision img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .vision .btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+        padding: 20px;
+        background: #222;
+        color: #fff;
+        border: 1px solid #c78c06;
+    }
+
+    /* Our Team Styles */
+    .john,
+    .bob {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr auto;
+    }
+
+    .john img {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .bob img {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .jdetails {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        padding-left: 10px;
+    }
+
+    .bdetails {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        padding-left: 10px;
+    }
+
+    .john h3 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .bob h3 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .john h4 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .bob h4 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .john p {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .bob p {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    /* Styling Contact Us Styles */
+    .contactform {
+        display: block;
+      }
+    
+      .hours {
+        max-width: 1200px;
+        margin: 10px;
+        padding: 1em;
+    }
+    
+    .hours h4 {
+        font-weight: bold;
+        color: #222;
+        text-align: left;
+    }
+    
+    thead,
+    th {
+        text-align: center;
+    }
+
+    .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 3fr; 
+            grid-template-areas:  
+            "form map"
+            "form map"
+            "hour hour";
+          }
+    
+        .contactform {
+            grid-area: form;
+        }
+    
+        .location {
+            grid-area: map;
+        }
+    
+        .hours {
+            grid-area: hour;
+        }
+
+    input[type="text"] {
+    width: 500px;
+}
+
+input[type="email"] {
+    width: 500px;
+}
+
+textarea {
+    width: 500px;
+}
 }
