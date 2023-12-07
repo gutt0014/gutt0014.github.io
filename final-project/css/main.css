@@ -23,7 +23,7 @@ h4 {
     margin: 0 auto
 }
 
-/* Font sizes are proportionate to eachother: www.modularscale.com */
+/* Proportionate font sizes to eachother: www.modularscale.com */
 h1 {
     font-size: 5.063rem;
 }
@@ -43,7 +43,7 @@ h4 {
 p {
     margin: 0 auto;
 }
-
+/* Styling the global container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,7 +65,7 @@ p {
     background-color: #222;
     ;
 }
-
+/* Adding a hover and focus on nav */
 .nav-list a,
 .nav-list :link,
 .nav-list a:visited {
@@ -153,6 +153,7 @@ p {
     padding: 10px;
 }
 
+/* Styling each card */
 .card-marketing {
     border: 2px solid #ffe6ac;
     border-radius: 6px;
@@ -180,7 +181,6 @@ p {
     background-color: #ffe6ac;
     padding: 10px;
 }
-
 
 .cards .btn {
     background: #222;
@@ -229,6 +229,7 @@ p {
     color: #fff;
 }
 
+/* Creating a banner effect over the img in the vision section */
 .vision p {
     position: absolute;
     top: 50%;
@@ -253,6 +254,13 @@ p {
     padding: 1em;
 }
 
+button[type="submit"] {
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+/* creating larget input boxes */
 input[type="text"] {
     width: 400px;
 }
@@ -263,12 +271,6 @@ input[type="email"] {
 
 textarea {
     width: 400px;
-}
-
-button[type="submit"] {
-    background-color: #222;
-    color: #c78c06;
-    border: 1px solid #c78c06;
 }
 
 /* Table styles */
@@ -283,6 +285,7 @@ button[type="submit"] {
     color: #222;
 }
 
+/* Creating table lines and setting thead background colour */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -330,6 +333,7 @@ footer p {
 /* Desktop Styles */
 @media screen and (min-width: 760px) {
     /* Styling header */
+    /* Styling header to be single row using flex */
     header {
         background-color: #222;
         color: #fff;
@@ -343,6 +347,7 @@ footer p {
         background-color: #222;
     }
 
+    /* Adjusting logo size and background colour */
     .logo {
         flex-grow: 1;
         background-color: #222;
@@ -393,6 +398,7 @@ footer p {
         height: auto;
     }
 
+    /* Setting position of banner to be centered over the banner image */
     .banner {
         position: absolute;
         top: 70%;
@@ -429,6 +435,7 @@ footer p {
     }
 
     /* Stlying About Us Section */
+    /* Using grid to style about section: image on left, heading and paragraph on right */
     .wrapper-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -449,6 +456,7 @@ footer p {
     }
 
     /* Styling Cards */
+    /* Using grid to style cards, 2 on row 1, 3 on row 2 */
     .cards .btn {
         display: block;
         padding: 10px;
@@ -501,6 +509,10 @@ footer p {
     }
 
     /* Our Team Styles */
+    /* Using grid to have
+        image text
+        text image
+    for the our team section */
     .john,
     .bob {
         display: grid;
@@ -564,8 +576,8 @@ footer p {
     .contactform {
         display: block;
       }
-    
-      .hours {
+    /* Styling the table to stretch the full width of the container */
+    .hours {
         max-width: 1200px;
         margin: 10px;
         padding: 1em;
@@ -581,7 +593,10 @@ footer p {
     th {
         text-align: center;
     }
-
+    /* Using grid areas to style the contact us section
+        form map
+        form map
+        hour hour */
     .contact {
             display: grid;
             grid-template-columns: 1fr 1fr; 
@@ -603,7 +618,7 @@ footer p {
         .hours {
             grid-area: hour;
         }
-
+/* Adjusting input boxes to fit evenly  */
     input[type="text"] {
     width: 500px;
 }

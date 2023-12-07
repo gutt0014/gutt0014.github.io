@@ -20,9 +20,12 @@
 </head>
 
 <body>
+    <!-- Creating container for full webpage -->
     <div class="container">
         <header>
+            <!-- Creating div for navigation bar -->
             <div class="nav-bar">
+                <!-- Creating div to style mobile logo -->
                 <div class="logo">
                     <img class="mobile-logo" src="images/logo.png" alt="mobile-logo">
                 </div>
@@ -37,6 +40,7 @@
                         </ul>
                     </nav>
                 </div>
+                <!-- Creating div to create Search Bar -->
                 <div class="searchform">
                     <form action="search" method="post">
                         <input id="search" type="text" placeholder="Search"><button type="submit"><span
@@ -45,11 +49,12 @@
                 </div>
             </div>
         </header>
-
+        <!-- Closing header -->
         <main class="content">
             <div class="bannerpic">
                 <img src="images/main-banner.jpg" alt="Banner">
             </div>
+            <!-- Adding Banner to create overlay on image in css -->
             <div class="banner">
                 <h1>Welcome to Three Star Media</h1>
                 <p>
@@ -60,7 +65,7 @@
                         arrow_right
                     </span></a>
             </div>
-
+            <!-- Adding About Us Section -->
             <section id="aboutus" class="wrapper-about">
                 <div class="aboutimg">
                     <img src="images/about-us.jpg" alt="About Us">
@@ -80,9 +85,10 @@
                     </p>
                 </div>
             </section>
-
+            <!-- Adding Our Services Section -->
             <section id="ourservices">
                 <h2>Our Services</h2>
+                <!-- Creating Cards -->
                 <div class="cards">
                     <div class="card-digital">
                         <img src="images/digital.jpg" alt="Our Services">
@@ -93,7 +99,7 @@
                         </p>
                         <a href="#" class="btn">Digital Plans<span
                                 class="material-symbols-outlined">arrow_right</span></a>
-                    </div>
+                    </div><!-- Closing Card -->
 
                     <div class="card-marketing">
                         <img src="images/marketing.jpg" alt="marketings">
@@ -104,7 +110,7 @@
                         </p>
                         <a href="#" class="btn">Marketing Plans<span
                                 class="material-symbols-outlined">arrow_right</span></a>
-                    </div>
+                    </div><!-- Closing Card -->
 
                     <div class="card-video">
                         <img src="images/video.jpg" alt="video">
@@ -115,7 +121,7 @@
                         </p>
                         <a href="#" class="btn">Video Plans<span
                                 class="material-symbols-outlined">arrow_right</span></a>
-                    </div>
+                    </div><!-- Closing Card -->
 
                     <div class="card-web">
                         <img src="images/web.jpg" alt="web">
@@ -125,7 +131,7 @@
                             labore et dolore magna aliqua.
                         </p>
                         <a href="#" class="btn">Web Plans<span class="material-symbols-outlined">arrow_right</span></a>
-                    </div>
+                    </div><!-- Closing Card -->
 
                     <div class="card-print">
                         <img src="images/print.jpg" alt="Print">
@@ -136,10 +142,11 @@
                         </p>
                         <a href="#" class="btn">Print Plans<span
                                 class="material-symbols-outlined">arrow_right</span></a>
-                    </div>
-                </div>
-            </section>
-
+                    </div><!-- Closing Card -->
+                </div><!-- Closing Cards -->
+            </section><!-- Closing Our Services Section -->
+            
+            <!-- Creating Our Vision Section -->
             <section id="ourvision">
                 <div class="vision">
                     <img src="images/vision.jpg" alt="vision">
@@ -152,9 +159,11 @@
                 </div>
             </section>
 
+                <!-- Creating Our team Section -->
             <section id="ourteam">
                 <h2>Our Team</h2>
                 <div class="team">
+                    <!-- Creating div for john to style easily -->
                     <div class="john">
                         <img src="images/john.jpg" alt="John Doe">
                         <div class=jdetails>
@@ -168,6 +177,7 @@
                         </div>
                     </div>
 
+                    <!-- Creating div for bob to style easily  -->
                     <div class="bob">
                         <img src="images/bob.jpg" alt="Bob Rite">
                         <div class="bdetails">
@@ -181,11 +191,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section><!-- Closing section -->
 
+                <!-- Creating Contact Us Section -->
             <section id="contactus">
                 <h2>Contact Us</h2>
+                <!-- Adding contact div as a wrapper -->
                 <div class="contact">
+                    <!-- Adding Contact Form div for styling -->
                     <div class="contactform">
                         <h3>Send us a message</h3>
                         <form action="contact" method="post">
@@ -197,17 +210,17 @@
                             <textarea id="message" name="message"></textarea>
                             <button type="submit">Send</button>
                         </form>
-                    </div>
+                    </div><!-- closing contactform -->
 
-                    <div class="location">
+                    <div class="location"><!-- Creating location div -->
                         <h4>Location</h4>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251135!2d-75.82702347832036!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701114461997!5m2!1sen!2sca"
                             width="600" height="450" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    </div><!-- closing location -->
 
-                    <div class="hours">
+                    <div class="hours"><!-- Creating hours div -->
                         <h4>Hours of Operation</h4>
                         <table>
                             <thead>
@@ -227,16 +240,17 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-            </section>
-        </main>
+                    </div><!-- closing hours -->
+                </div><!-- closing contact -->
+            </section><!-- closing contact us -->
+        </main><!-- closing main -->
 
+        <!-- Adding footer -->
         <footer class="footer">
             <p>Copyright &copy; Three Star Media 2023</p>
             <p>All images are taken from <u>Unsplash</u></p>
-        </footer>
-    </div>
+        </footer><!-- closing footer -->
+    </div><!-- closing container -->
 </body>
 
 </html>
