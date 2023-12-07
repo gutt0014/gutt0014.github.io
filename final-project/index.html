@@ -21,48 +21,50 @@
 
 <body>
     <div class="container">
-        <!-- Adds header to body -->
         <header>
-            <img class="mobile-logo" src="images/logo.png" alt="mobile-logo">
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <form action="search" method="post">
-                <div><input id="search" type="text" placeholder="Search"><button type="submit"><span
-                            class="material-symbols-outlined">search</span></button></div>
-            </form>
-        </header>
-    </div>
-    <!-- Add main to body -->
-    <main class="main-content">
-        <div class="container">
-            <div class="intro">
-                <img src="images/main-banner.jpg" alt="Banner">
-                    <div class="banner">
-                        <h1>Welcome to Three Star Media</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <a href="contact" class="btn" id="connect">Connect with us<span class="material-symbols-outlined">
-                            arrow_right
-                        </span></a>
+            <div class="nav-bar">
+                <div class="logo">
+                    <img class="mobile-logo" src="images/logo.png" alt="mobile-logo">
+                </div>
+                <div class="nav-list">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="searchform">
+                    <form action="search" method="post">
+                        <input id="search" type="text" placeholder="Search"><button type="submit"><span
+                                class="material-symbols-outlined">search</span></button>
+                    </form>
                 </div>
             </div>
-        </div>
-        <!-- Adds section about us with div and wrapper-->
-        <section id="aboutus" class="wrapper about">
-            <div class="max-mar about-div">
+        </header>
+
+        <main class="content">
+            <div class="bannerpic">
+            <img src="images/main-banner.jpg" alt="Banner">
+            </div>
+            <div class="banner">
+                <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. 
+                </p>
+                <a href="contact" class="btn" id="connect">Connect with us<span class="material-symbols-outlined">
+                        arrow_right
+                    </span></a>
+            </div>
+
+            <section id="aboutus" class="wrapper-about">
+                <div class="aboutimg">
                 <img src="images/about-us.jpg" alt="About Us">
+                </div>
                 <div class="about">
                     <h2>About Us</h2>
                     <p>
@@ -70,175 +72,165 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
+                    <br>
                     <p>
                         Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-            </div>
-        </section> <!-- Closing section -->
-
-        <section id="ourservices" class="wrapper services">
-            <div class="max-mar services-div">
-                <h2>Our Services</h2>
-                <div class="card">
-                    <img src="images/digital.jpg" alt="Our Services">
-                    <h3>Digital Transformation</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                    <a href="#" class="btn">Digital Plans<span class="material-symbols-outlined">arrow_right</span></a>
-                </div>
-            </div> <!-- closing card -->
-
-            <div class="card">
-                <img src="images/marketing.jpg" alt="marketings">
-                <h3>Marketing</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="btn">Marketing Plans<span class="material-symbols-outlined">arrow_right</span></a>
-            </div> <!-- closing card -->
-
-            <div class="card">
-                <img src="images/video.jpg" alt="video">
-                <h4>Video Production</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.
-                </p>
-                <a href="#" class="btn">Video Plans<span class="material-symbols-outlined">arrow_right</span></a>
-            </div> <!-- closing card -->
-
-            <div class="card">
-                <img src="images/web.jpg" alt="web">
-                <h4>Web Development</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <a href="#" class="btn">Web Plans<span class="material-symbols-outlined">arrow_right</span></a>
-            </div> <!-- closing card -->
-
-            <div class="card">
-                <img src="images/print.jpg" alt="Print">
-                <h4>Print</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <a href="#" class="btn">Print Plans<span class="material-symbols-outlined">arrow_right</span></a>
-            </div> <!-- closing card -->
-        </section>
-        <!-- closing section -->
-
-        <section id=ourvision class="wrapper vision">
-            <div class="max-mar about-div">
-                <img src="images/vision.jpg" alt="vision">
-                <h2>Our Vision</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.
-                </p>
-                <a href="#" class="btn">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
-            </div>
-        </section> <!-- closing card -->
-        <!-- Closing section -->
-
-        <section id=ourteam class="wrapper team">
-            <div class="max-mar team-div">
-                <h2>Our Team</h2>
-                <div class="john">
-                    <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                </div>
-
-                <div class="Bob">
-                    <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Adding Contact Form  -->
-        <section id="contactus" class="wrapper contact">
-            <div class="max-mar contact-div"></div>
-            <h2>Contact Us</h2>
-            <div class="contactform">
-                <h3>Send us a message</h3>
-                <form action="contact" method="post">
-                    <label for="fullname">Full Name</label>
-                    <div><input id="fullname" type="text"></div>
-                    <label for="email">Email</label>
-                    <div><input id="email" type="email"></div>
-                    <label for="message">Message</label>
-                    <div><textarea id="message" name="message"></textarea></div>
-                    <div><button type="submit">Send</button></div>
-                </form>
-            </div>
-            </div>
-        </section>
-
-        <!-- Adds Hours Table Section -->
-        <div class="hours-wrapper">
-            <section>
-                <h4>Hours of Operation</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
             </section>
-        </div>
-        <!--Adding Location & Map  -->
-        <div class="location-wrapper">
-            <section>
-                <h4>Location</h4>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251135!2d-75.82702347832036!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701114461997!5m2!1sen!2sca"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <section id="ourservices">
+                <div class="cards">
+                    <h2>Our Services</h2>
+                    <div class="card-digital">
+                        <img src="images/digital.jpg" alt="Our Services">
+                        <h3>Digital Transformation</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn">Digital Plans<span
+                                class="material-symbols-outlined">arrow_right</span></a>
+                    </div>
+
+                    <div class="card-marketing">
+                        <img src="images/marketing.jpg" alt="marketings">
+                        <h3>Marketing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn">Marketing Plans<span
+                                class="material-symbols-outlined">arrow_right</span></a>
+                    </div>
+
+                    <div class="card-video">
+                        <img src="images/video.jpg" alt="video">
+                        <h3>Video Production</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn">Video Plans<span
+                                class="material-symbols-outlined">arrow_right</span></a>
+                    </div>
+
+                    <div class="card-web">
+                        <img src="images/web.jpg" alt="web">
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn">Web Plans<span class="material-symbols-outlined">arrow_right</span></a>
+                    </div>
+
+                    <div class="card-print">
+                        <img src="images/print.jpg" alt="Print">
+                        <h3>Print</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="btn">Print Plans<span
+                                class="material-symbols-outlined">arrow_right</span></a>
+                    </div>
+                </div>
             </section>
-        </div>
-        <!-- Adding footer -->
-        <div class="footerr">
-            <footer>
-                <p>Copyright &copy; Three Star Media 2023</p>
-                <p>All images are taken from <u>Unsplash</u></p>
-            </footer>
-        </div>
-    </main>
+
+            <section id="ourvision">
+                <div class="vision">
+                    <img src="images/vision.jpg" alt="vision">
+                    <h2>Our Vision</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="btn">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </section>
+
+            <section id="ourteam">
+                <div class="team">
+                    <h2>Our Team</h2>
+                    <div class="john">
+                        <img src="images/john.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <div class="bob">
+                        <img src="images/bob.jpg" alt="Bob Rite">
+                        <h3>Bob Rite</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contactus">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <div class="contactform">
+                        <h3>Send us a message</h3>
+                        <form action="contact" method="post">
+                            <label for="fullname">Full Name</label>
+                            <div><input id="fullname" type="text"></div>
+                            <label for="email">Email</label>
+                            <div><input id="email" type="email"></div>
+                            <label for="message">Message</label>
+                            <div><textarea id="message" name="message"></textarea></div>
+                            <div><button type="submit">Send</button></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <h4>Location</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251135!2d-75.82702347832036!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701114461997!5m2!1sen!2sca"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hours">
+                    <h4>Hours of Operation</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright &copy; Three Star Media 2023</p>
+            <p>All images are taken from <u>Unsplash</u></p>
+        </footer>
+    </div>
 </body>
 
 </html>
